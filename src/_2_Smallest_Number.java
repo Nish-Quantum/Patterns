@@ -19,5 +19,9 @@ public class _2_Smallest_Number {
           
         }
         return arr[start % arr.length];
+        //WRAP AROUND CASE
+        //if start is at end example['c','d','f'] and target is f
+        //then start = nums.length  --->it automatically returns to 0 matrix
+        //if number is normally present in between the start(small number)%nums.length(large number) will be equal to start onlyyyyy!!!!
     }
 }
