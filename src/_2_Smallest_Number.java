@@ -13,13 +13,11 @@ public class _2_Smallest_Number {
             if(target<arr[mid]){
                 end=mid-1;
             }
-            if(target>arr[mid]){
+            else{
                 start=mid+1;
             }
-            if(target==arr[mid]){
-                return arr[mid];
-            }
+          
         }
-        return arr[start];
+        return arr[start % arr.length];
     }
 }
